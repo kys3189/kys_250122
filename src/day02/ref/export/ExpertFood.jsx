@@ -1,10 +1,15 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';//가운데 리엑트에서 제공하는 훅훅
 
 const ExpertFood = () => {
+  //useState는 초기값인 foods값에 set붙인 변수값에 넣은 값을 보냄, usestate(값 유형)을 담음
   const [foods, setFoods] = useState([])
   const [checked, setChecked] = useState([])
-
+  //연동을위한 값
+  // ref={(el) => { inputRef.current[0] = el}} 참조하기 위한 주소값
   const inputRef = useRef([])
+
+  //푸드스에 존재하는 빈 배열에 콘캣을 해서 새로운 배열을 만들어 넣음
+  //연동된 인풋의.커런트[0번째 방].값 을 꺼내서 왼쪽 값에 넣음
   const onClickAddFood = () => {
     setFoods(
       foods.concat({
