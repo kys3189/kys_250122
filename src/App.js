@@ -1,14 +1,16 @@
-// import logo from './logo.svg';
 import './App.css';
-import SideEffectTask01 from './day03/life-cycle/function/side-effect/SideEffectTask01';
-// import SideEffect from './day03/life-cycle/function/side-effect/SideEffect';
-
+import AnimalsContainer from './day05/context/expert/AnimalsContainer';
+// import CharContainer from './day05/context/basic/CharContainer';
+// import ParentContainer from './day05/context/basic/ParentContainer';
+// import NormalContainer from './day05/context/normal/NormalContainer';
 
 function App() {
   return (
     <>
-      {/* <SideEffect /> */}
-      <SideEffectTask01/>
+      {/* <CharContainer /> */}
+      {/* <ParentContainer /> */}
+      {/* <NormalContainer /> */}
+      <AnimalsContainer />
     </>
   );
 }
